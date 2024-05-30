@@ -12,7 +12,6 @@ class CarMake(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     # Other fields as needed
-
     def __str__(self):
         return self.name  # Return the name as the string representation
 
@@ -41,6 +40,5 @@ class CarModel(models.Model):
             MinValueValidator(2015)
         ])
     # Other fields as needed
-
     def __str__(self):
         return self.name  # Return the name as the string representation
