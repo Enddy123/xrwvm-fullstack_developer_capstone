@@ -1,6 +1,6 @@
 # Uncomment the imports before you add the code
+# from django.conf.urls.static import static
 from django.urls import path
-from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 
@@ -24,7 +24,7 @@ urlpatterns = [
          name='get_dealers_by_state'),
     path(route='dealer/<int:dealer_id>', view=views.get_dealer_details,
          name='dealer_details'),
-    
+
     # path for dealer reviews view
     path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews,
          name='dealer_details'),
