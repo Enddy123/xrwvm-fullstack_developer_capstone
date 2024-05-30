@@ -54,5 +54,3 @@ def initiate():
                                 type=data['type'], year=data['year'])
 
 
-# def initiate():
- #   print("Populate not implemented. Add data manually")
